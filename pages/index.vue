@@ -88,48 +88,41 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  head: {
-    title: "Greetings from a sample Nuxt.js app!",
-    meta: [
-      { content: "website", property: "og:type" },
-      {
-        content:
-          "https://cdn.scalingo.com/homepage/assets/fb-33a6a93ddbf90bfdae57407481aa05a4.png",
-        property: "og:image"
-      },
-      {
-        content:
-          "Deploying your own Nuxt.js app on Scalingo is as easy as pie: JUST CLICK THIS BUTTON! It will be up in less than 2 minutes!",
-        property: "og:description"
-      },
-      { charset: "utf-8" },
-      {
-        name: "viewport",
-        content: "width: device-width, initial-scale: 1, shrink-to-fit: no"
-      },
-      { httpEquiv: "x-ua-compatible", content: "ie=edge" }
-    ],
-    link: [
-      {
-        rel: "shortcut icon",
-        href: "https://scalingo.com/favicon.ico",
-        type: "image/vnd.microsoft.icon"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
-      },
-      {
-        href: "https://fonts.googleapis.com/css?family=Roboto:300,500",
-        rel: "stylesheet"
-      }
-    ]
-  }
+<script setup lang="ts">
+useHead({
+  title: "Greetings from a sample Nuxt.js app!",
+  meta: [
+    { property: "og:type", content: "website" },
+    {
+      property: "og:image",
+      content: "https://cdn.scalingo.com/homepage/assets/fb-33a6a93ddbf90bfdae57407481aa05a4.png"
+    },
+    {
+      property: "og:description",
+      content: "Deploying your own Nuxt.js app on Scalingo is as easy as pie: JUST CLICK THIS BUTTON! It will be up in less than 2 minutes!"
+    },
+    { charset: "utf-8" },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+    },
+    { httpEquiv: "x-ua-compatible", content: "ie=edge" }
+  ],
+  link: [
+    {
+      rel: "shortcut icon",
+      href: "https://scalingo.com/favicon.ico",
+      type: "image/vnd.microsoft.icon"
+    },
+    {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css?family=Roboto:300,500"
+    }
+  ]
 });
 </script>
 
