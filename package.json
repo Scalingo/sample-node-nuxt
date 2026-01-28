@@ -2,6 +2,7 @@
   "name": "sample-node-nuxt-scalingo",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -9,12 +10,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^2.0.1",
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^4.2.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.12",
-    "@nuxt/typescript-build": "^2.0.4"
-  }
+    "typescript": "^5.7.2",
+    "vue-tsc": "^2.2.0"
+  },
+  "resolutions": {
+    "vite": "^7.3.1",
+    "@vue/compiler-sfc": "^3.5.26"
+}
 }
