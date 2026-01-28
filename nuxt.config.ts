@@ -18,18 +18,14 @@ export default defineNuxtConfig({
     }
   },
 
-  // Auto import components (activé par défaut dans Nuxt 4)
   components: true,
 
-  // DevTools
   devtools: { enabled: true },
 
-  // Server config pour Scalingo
   nitro: {
     preset: 'node-server',
   },
   
-  // Écoute sur toutes les interfaces et utilise $PORT
   devServer: {
     host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 3000
