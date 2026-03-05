@@ -21,6 +21,7 @@
     "readdir-glob": "^2.0.2",
     "vite": "^7.3.1",
     "@vue/compiler-sfc": "^3.5.26",
-    "serialize-javascript": "^7.0.3"
+    "serialize-javascript": "^7.0.3",
+    "tar": "^7.5.10"
   }
 }
