@@ -10,7 +10,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^4.4.8"
+    "nuxt": "^4.5.0"
   },
   "devDependencies": {
     "typescript": "^7.0.2",
