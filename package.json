@@ -15,6 +15,9 @@
   "dependencies": {
     "nuxt": "^4.6.0"
   },
+  "resolutions": {
+    "simple-git": "^4.0.2"
+  },
   "devDependencies": {
     "typescript": "^7.0.2",
     "vue-tsc": "^3.3.12"
