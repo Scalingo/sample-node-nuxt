@@ -1,10 +1,14 @@
-FROM node:22
+FROM node:26
 
 WORKDIR /app
 
-COPY . /app
+RUN npm install -g corepack && corepack enable
 
-RUN yarn install
+COPY package.json yarn.lock ./
+
+RUN yarn install --frozen-lockfile
+
+COPY . .
 
 ENV HOST 0.0.0.0
 ENV NUXT_PORT 3000 
